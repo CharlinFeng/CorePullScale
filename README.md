@@ -8,8 +8,7 @@
 >2.支持大屏的横竖屏，不再担心横屏变形了。<br />
 >2.支持TableView 及 CollectionView <br />
 
-##使用说明：<br />
-安装
+##安装说明：<br />
 >1.将CorePullScale文件夹放入您的项目中
 >2.#import "UIScrollView+PullScale.h"
 >3.在ViewdidLoad中直接按以下代码安装即可（图片名换成您对应的图片名）<br />
