@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6517C421A9B27F9008DF97F /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6517C411A9B27F9008DF97F /* 1.png */; };
 		D65B68441A9AD32600C36F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68431A9AD32600C36F6B /* main.m */; };
 		D65B68471A9AD32600C36F6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68461A9AD32600C36F6B /* AppDelegate.m */; };
 		D65B684A1A9AD32600C36F6B /* NewsListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68491A9AD32600C36F6B /* NewsListTVC.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6517C411A9B27F9008DF97F /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		D65B683E1A9AD32600C36F6B /* CorePullScale.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorePullScale.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65B68421A9AD32600C36F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D65B68431A9AD32600C36F6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6517C401A9B27F9008DF97F /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D6517C411A9B27F9008DF97F /* 1.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
 		D65B68351A9AD32500C36F6B = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		D65B68411A9AD32600C36F6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6517C401A9B27F9008DF97F /* img */,
 				D65B68421A9AD32600C36F6B /* Info.plist */,
 				D65B68431A9AD32600C36F6B /* main.m */,
 			);
@@ -220,6 +231,7 @@
 				D65B684D1A9AD32600C36F6B /* Main.storyboard in Resources */,
 				D65B68521A9AD32600C36F6B /* LaunchScreen.xib in Resources */,
 				D65B684F1A9AD32600C36F6B /* Images.xcassets in Resources */,
+				D6517C421A9B27F9008DF97F /* 1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
