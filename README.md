@@ -17,9 +17,10 @@
     [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
   
 >4.如果需要支持iPhone6 Plus，请复制以下方法到您的控制器<br />
+
     -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
-    [self.tableView rotationSupportWithNavBarH:self.navigationController.navigationBar.bounds.size.height];
-}
+        [self.tableView rotationSupportWithNavBarH:self.navigationController.navigationBar.bounds.size.height];
+    }
 
 <br />
 ##看看效果图吧
