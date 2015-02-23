@@ -37,7 +37,8 @@
 
 <br /><br />
 #### 版权说明 RIGHTS ：<br />
-本框架由iOS开发攻城狮Charlin制作<br /><br />
+本框架由iOS开发攻城狮Charlin制作。<br />
+作品时间： 2015.02.23日 11:21<br /><br />
 #### 作者简介 INTRODUCE ：<br />
 Charlin-四川成都华西都市报旗下华西都市网络有限公司技术部iOS工程师！
 <br /><br />
