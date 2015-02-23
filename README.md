@@ -15,12 +15,12 @@
 ====
 
 <br /><br />
-#### 版权说明(RIGHTS)：<br />
+#### 版权说明 RIGHTS ：<br />
 本框架由iOS开发攻城狮Charlin制作<br /><br />
-#### 作者简介(INTRODUCE)：<br />
+#### 作者简介 INTRODUCE ：<br />
 Charlin-四川成都华西都市报旗下华西都市网络有限公司技术部iOS工程师！
 <br /><br />
-#### 联系方式(CONTACT)：<br />
+#### 联系方式 CONTACT ：<br />
 Q    Q：1761904945（请注明缘由）<br />
 Mail：1761904945@qq.com
 <br />
