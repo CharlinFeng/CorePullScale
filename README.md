@@ -26,7 +26,13 @@
 ##看看效果图吧
 ![image](./CorePullScale/img/1.png)
 
-******
+
+
+感谢！
+
+----
+
+
 
 <br /><br />
 #### 版权说明 RIGHTS ：<br />
