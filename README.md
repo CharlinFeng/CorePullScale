@@ -6,11 +6,11 @@
 ##框架特性：<br />
 >1.支持所有ios版本（ios6-ios8），没有版本压力！<br />
 >2.支持大屏的横竖屏，不再担心横屏变形了。<br />
->2.支持TableView 及 CollectionView <br />
+>2.支持TableView 及 CollectionView 。<br />
 
 ##安装说明：<br />
->1.将CorePullScale文件夹放入您的项目中
->2.#import "UIScrollView+PullScale.h"
+>1.将CorePullScale文件夹放入您的项目中<br />
+>2.#import "UIScrollView+PullScale.h"<br />
 >3.在ViewdidLoad中直接按以下代码安装即可（图片名换成您对应的图片名）<br />
 
     [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
