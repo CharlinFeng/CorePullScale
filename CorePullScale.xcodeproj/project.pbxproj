@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		D65B68441A9AD32600C36F6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68431A9AD32600C36F6B /* main.m */; };
 		D65B68471A9AD32600C36F6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68461A9AD32600C36F6B /* AppDelegate.m */; };
-		D65B684A1A9AD32600C36F6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68491A9AD32600C36F6B /* ViewController.m */; };
+		D65B684A1A9AD32600C36F6B /* NewsListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68491A9AD32600C36F6B /* NewsListTVC.m */; };
 		D65B684D1A9AD32600C36F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65B684B1A9AD32600C36F6B /* Main.storyboard */; };
 		D65B684F1A9AD32600C36F6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65B684E1A9AD32600C36F6B /* Images.xcassets */; };
 		D65B68521A9AD32600C36F6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65B68501A9AD32600C36F6B /* LaunchScreen.xib */; };
 		D65B685E1A9AD32600C36F6B /* CorePullScaleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B685D1A9AD32600C36F6B /* CorePullScaleTests.m */; };
+		D65B686A1A9AD37600C36F6B /* UIScrollView+PullScale.m in Sources */ = {isa = PBXBuildFile; fileRef = D65B68691A9AD37600C36F6B /* UIScrollView+PullScale.m */; };
+		D6A1681F1A9AE248001AAEE2 /* CorePullScaleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6A1681E1A9AE248001AAEE2 /* CorePullScaleImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		D65B68431A9AD32600C36F6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D65B68451A9AD32600C36F6B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D65B68461A9AD32600C36F6B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D65B68481A9AD32600C36F6B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D65B68491A9AD32600C36F6B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D65B68481A9AD32600C36F6B /* NewsListTVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsListTVC.h; sourceTree = "<group>"; };
+		D65B68491A9AD32600C36F6B /* NewsListTVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsListTVC.m; sourceTree = "<group>"; };
 		D65B684C1A9AD32600C36F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D65B684E1A9AD32600C36F6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D65B68511A9AD32600C36F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D65B68571A9AD32600C36F6B /* CorePullScaleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CorePullScaleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65B685C1A9AD32600C36F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D65B685D1A9AD32600C36F6B /* CorePullScaleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorePullScaleTests.m; sourceTree = "<group>"; };
+		D65B68681A9AD37600C36F6B /* UIScrollView+PullScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PullScale.h"; sourceTree = "<group>"; };
+		D65B68691A9AD37600C36F6B /* UIScrollView+PullScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PullScale.m"; sourceTree = "<group>"; };
+		D6A1681D1A9AE248001AAEE2 /* CorePullScaleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorePullScaleImageView.h; sourceTree = "<group>"; };
+		D6A1681E1A9AE248001AAEE2 /* CorePullScaleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorePullScaleImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,11 @@
 		D65B68401A9AD32600C36F6B /* CorePullScale */ = {
 			isa = PBXGroup;
 			children = (
+				D65B68671A9AD33800C36F6B /* CorePullScale */,
 				D65B68451A9AD32600C36F6B /* AppDelegate.h */,
 				D65B68461A9AD32600C36F6B /* AppDelegate.m */,
-				D65B68481A9AD32600C36F6B /* ViewController.h */,
-				D65B68491A9AD32600C36F6B /* ViewController.m */,
+				D65B68481A9AD32600C36F6B /* NewsListTVC.h */,
+				D65B68491A9AD32600C36F6B /* NewsListTVC.m */,
 				D65B684B1A9AD32600C36F6B /* Main.storyboard */,
 				D65B684E1A9AD32600C36F6B /* Images.xcassets */,
 				D65B68501A9AD32600C36F6B /* LaunchScreen.xib */,
@@ -117,6 +124,17 @@
 				D65B685C1A9AD32600C36F6B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D65B68671A9AD33800C36F6B /* CorePullScale */ = {
+			isa = PBXGroup;
+			children = (
+				D65B68681A9AD37600C36F6B /* UIScrollView+PullScale.h */,
+				D65B68691A9AD37600C36F6B /* UIScrollView+PullScale.m */,
+				D6A1681D1A9AE248001AAEE2 /* CorePullScaleImageView.h */,
+				D6A1681E1A9AE248001AAEE2 /* CorePullScaleImageView.m */,
+			);
+			path = CorePullScale;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D65B684A1A9AD32600C36F6B /* ViewController.m in Sources */,
+				D65B684A1A9AD32600C36F6B /* NewsListTVC.m in Sources */,
 				D65B68471A9AD32600C36F6B /* AppDelegate.m in Sources */,
 				D65B68441A9AD32600C36F6B /* main.m in Sources */,
+				D65B686A1A9AD37600C36F6B /* UIScrollView+PullScale.m in Sources */,
+				D6A1681F1A9AE248001AAEE2 /* CorePullScaleImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +364,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CorePullScale/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +375,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CorePullScale/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +434,7 @@
 				D65B68631A9AD32600C36F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D65B68641A9AD32600C36F6B /* Build configuration list for PBXNativeTarget "CorePullScaleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				D65B68661A9AD32600C36F6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
