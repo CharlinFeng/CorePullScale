@@ -12,8 +12,9 @@
 安装
 >1.将CorePullScale文件夹放入您的项目中
 >2.#import "UIScrollView+PullScale.h"
->3.在ViewdidLoad中直接按以下代码安装即可
-  [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
+>3.在ViewdidLoad中直接按以下代码安装即可（图片名换成您对应的图片名）
+    [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
+  
 >4.如果需要支持iPhone6 Plus，请复制以下方法到您的控制器
   -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
     
