@@ -15,7 +15,7 @@
 >2.#import "UIScrollView+PullScale.h"<br />
 >3.在ViewdidLoad中直接按以下代码安装即可（图片名换成您对应的图片名）<br />
 
-    [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
+    [self.tableView addPullScaleFuncInVC:self imgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
   
 <br />
 ##看看效果图吧
