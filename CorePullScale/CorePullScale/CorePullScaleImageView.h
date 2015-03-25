@@ -28,10 +28,9 @@
 
 
 /**
- *  支持屏幕旋转
+ *  所属控制器
  */
--(void)rotationSupportWithNavBarH:(CGFloat)navBarH;
-
+@property (nonatomic,weak) UIViewController *vc;
 
 
 @end

@@ -32,14 +32,38 @@ static NSString *const CorePullScaleContentOffset = @"contentOffset";
     self = [super init];
     if (self) {
         
-        //设置模式
-        self.contentMode=UIViewContentModeScaleAspectFill;
-        
-        //剪切
-        self.clipsToBounds=YES;
+        //初始化
+        [self pullScaleImageViewPrepare];
     }
     return self;
 }
+
+
+/**
+ *  初始化
+ */
+-(void)pullScaleImageViewPrepare{
+    
+    //设置模式
+    self.contentMode=UIViewContentModeScaleAspectFill;
+    
+    //剪切
+    self.clipsToBounds=YES;
+    
+    //事件监听
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(screenRotate) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+
+
+/**
+ *  屏幕旋转
+ */
+-(void)screenRotate{
+    
+    [self rotationSupportWithNavBarH:_vc.navigationController.navigationBar.bounds.size.height];
+}
+
 
 
 
@@ -113,7 +137,7 @@ static NSString *const CorePullScaleContentOffset = @"contentOffset";
  *  支持屏幕旋转
  */
 -(void)rotationSupportWithNavBarH:(CGFloat)navBarH{
-    
+    NSLog(@"===%@",@(navBarH));
     _navBarH=navBarH;
 
     if(_hasNavBar && (!iOS8 || (iOS8 && navBarH==44.0f))) _navBarH+=20.0f;

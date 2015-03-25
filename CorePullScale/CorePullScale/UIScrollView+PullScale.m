@@ -27,10 +27,11 @@ static char CorePullScaleImageViewKey;
 /**
  *  添加一个下拉放大的功能
  *
+ *  @param vc                   所属控制器
  *  @param imgName              图片名
  *  @param originalHeight       imageView的初始高度（关系到contentInset及contentOffset）
  */
--(void)addPullScaleFuncWithImgName:(NSString *)imgName originalHeight:(CGFloat)originalHeight hasNavBar:(BOOL)hasNavBar{
+-(void)addPullScaleFuncInVC:(UIViewController *)vc imgName:(NSString *)imgName originalHeight:(CGFloat)originalHeight hasNavBar:(BOOL)hasNavBar{
     
     CorePullScaleImageView *imageV=[[CorePullScaleImageView alloc] init];
     
@@ -41,6 +42,7 @@ static char CorePullScaleImageViewKey;
     imageV.hasNavBar=hasNavBar;
     imageV.originalHeight=originalHeight;
     imageV.imgName=imgName;
+    imageV.vc=vc;
 
     CGFloat height=originalHeight;
 
@@ -48,7 +50,6 @@ static char CorePullScaleImageViewKey;
     /**
      *  contentInset
      */
-    
     //取出之前的contentInset
     UIEdgeInsets contentInset=self.contentInset;
     
@@ -60,7 +61,6 @@ static char CorePullScaleImageViewKey;
     /**
      *  contentOffset
      */
-    
     //取出之前的contentOffset
     CGPoint contentOffsett=self.contentOffset;
     
@@ -69,15 +69,7 @@ static char CorePullScaleImageViewKey;
     self.contentOffset=contentOffsett;
     
     //添加控件
-//    [self insertSubview:imageV atIndex:0];
     [self addSubview:imageV];
-}
-
-/**
- *  支持屏幕旋转
- */
--(void)rotationSupportWithNavBarH:(CGFloat)navBarH{
-    [self.imageV rotationSupportWithNavBarH:navBarH];
 }
 
 

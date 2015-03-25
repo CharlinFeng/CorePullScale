@@ -19,8 +19,7 @@
     
     [super viewDidLoad];
    
-    [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
-
+    [self.tableView addPullScaleFuncInVC:self imgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -42,9 +41,6 @@
     return cell;
 }
 
--(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
-    
-    [self.tableView rotationSupportWithNavBarH:self.navigationController.navigationBar.bounds.size.height];
-}
+
 
 @end
