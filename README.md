@@ -6,7 +6,8 @@
 ##框架特性：<br />
 >1.支持所有ios版本（ios6-ios8），没有版本压力！<br />
 >2.支持大屏的横竖屏，不再担心横屏变形了。<br />
->2.支持TableView 及 CollectionView 。<br />
+>3.支持TableView 及 CollectionView 。<br />
+>4.自动管理屏幕旋转，无需手动管理。<br />
 
 <br />
 ##安装说明：<br />
@@ -16,12 +17,6 @@
 
     [self.tableView addPullScaleFuncWithImgName:@"car@2x.jpg" originalHeight:150 hasNavBar:(self.navigationController!=nil)];
   
->4.如果需要支持iPhone6 Plus，请复制以下方法到您的控制器<br />
-
-    -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
-        [self.tableView rotationSupportWithNavBarH:self.navigationController.navigationBar.bounds.size.height];
-    }
-
 <br />
 ##看看效果图吧
 ![image](./CorePullScale/img/1.png)
