@@ -12,18 +12,22 @@
 
 
 #import <UIKit/UIKit.h>
+#import "CorePullScaleImageView.h"
+
+
 
 @interface UIScrollView (PullScale)
+
+@property (strong, nonatomic) CorePullScaleImageView *imageV;
 
 
 /**
  *  添加一个下拉放大的功能
  *
  *  @param vc                   所属控制器
- *  @param imgName              图片名
  *  @param originalHeight       imageView的初始高度（关系到contentInset及contentOffset）
  */
--(void)addPullScaleFuncInVC:(UIViewController *)vc imgName:(NSString *)imgName originalHeight:(CGFloat)originalHeight hasNavBar:(BOOL)hasNavBar;
+-(void)addPullScaleFuncInVC:(UIViewController *)vc originalHeight:(CGFloat)originalHeight hasNavBar:(BOOL)hasNavBar;
 
 
 

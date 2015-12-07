@@ -11,11 +11,6 @@
 #import <objc/runtime.h>
 
 
-@interface UIScrollView ()
-
-@property (weak, nonatomic) CorePullScaleImageView *imageV;
-
-@end
 
 
 #pragma mark - 运行时相关
@@ -28,10 +23,9 @@ static char CorePullScaleImageViewKey;
  *  添加一个下拉放大的功能
  *
  *  @param vc                   所属控制器
- *  @param imgName              图片名
  *  @param originalHeight       imageView的初始高度（关系到contentInset及contentOffset）
  */
--(void)addPullScaleFuncInVC:(UIViewController *)vc imgName:(NSString *)imgName originalHeight:(CGFloat)originalHeight hasNavBar:(BOOL)hasNavBar{
+-(void)addPullScaleFuncInVC:(UIViewController *)vc originalHeight:(CGFloat)originalHeight hasNavBar:(BOOL)hasNavBar{
     
     CorePullScaleImageView *imageV=[[CorePullScaleImageView alloc] init];
     
@@ -41,7 +35,6 @@ static char CorePullScaleImageViewKey;
     //数据传递
     imageV.hasNavBar=hasNavBar;
     imageV.originalHeight=originalHeight;
-    imageV.imgName=imgName;
     imageV.vc=vc;
 
     CGFloat height=originalHeight;
